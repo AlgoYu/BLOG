@@ -20,11 +20,11 @@ EF Core 可用作对象关系映射程序 (O/RM)，以便于 .NET 开发人员�
 
 创建一个ASP.NET Core Web工程，选择MVC的模板，
 在程序包管理控制台中安装EntityFramework。
-```bash
+```xml
 Install-Package Microsoft.EntityFrameworkCore
 ```
 安装AutoMapper。
-```bash
+```xml
 Install-Package AutoMapper
 ```
 在appsettings.json中添加连接数据库对象
@@ -34,7 +34,7 @@ Install-Package AutoMapper
   }
 ```
 创建两个实体类：
-```java
+```csharp
 public class Book
 {
     public int Id { get; set; }
@@ -43,7 +43,7 @@ public class Book
     public virtual ICollection<Comment> Comments { get; set; }
 }
 ```
-```java
+```csharp
 public class Comment
 {
     public int Id { get; set; }
@@ -54,7 +54,7 @@ public class Comment
 }
 ```
 写好两个实体类后，创建EF上下文：
-```java
+```csharp
 public class MyDB : DbContext
 {
     //构造函数
@@ -89,11 +89,11 @@ public class MyDB : DbContext
 }
 ```
 在startup的ConfigureServices方法中添加一个依赖注入：
-```java
+```csharp
 services.AddDbContext<MyDB>(x => x.UseSqlServer(Configuration.GetConnectionString("default")));
 ```
 创建Dto传输实体类：
-```java
+```csharp
 public class BookDto
 {
     public int Id { get; set; }
@@ -101,7 +101,7 @@ public class BookDto
 }
 ```
 创建AutoMapper配置类：
-```java
+```csharp
 public class AutoMapperConfiguration
 {
     //一个静态方法
@@ -120,11 +120,11 @@ public class AutoMapperConfiguration
 }
 ```
 在startup的Configure方法中加入静态方法调用：
-```java
+```csharp
 AutoMapperConfiguration.initializeMapper();
 ```
 在程序包管理器控制台添加数据迁移，再更新数据库：
-```bash
+```xml
 Add-Migration 迁移名称
 Update-Database
 ```
