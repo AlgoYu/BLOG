@@ -124,4 +124,4 @@ public void error(Session session, Throwable error){
 }
 ```
 
-<b><font color="FF0000">文章全部信息均为本人手写，禁止任何转载，本人QQ：794763733。</font></b>
+<b><font color="FF0000">文章内容均为本人手写；<br>禁止转载，请尊重原著；<br>本人QQ：794763733。</font></b>

@@ -1148,4 +1148,4 @@ namespace TengYe.Web.Portal.Areas.Business.Controllers
 }
 ```
 上面的注释已经详细的说明了EPPlus的使用方法，结合官方文档和查阅的资料，相信你很轻松就可以掌握。
-<b><font color="FF0000">文章全部信息均为本人手写，禁止任何转载，本人QQ：794763733。</font></b>
+<b><font color="FF0000">文章内容均为本人手写；<br>禁止转载，请尊重原著；<br>本人QQ：794763733。</font></b>

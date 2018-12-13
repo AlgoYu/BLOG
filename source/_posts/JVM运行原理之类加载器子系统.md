@@ -149,4 +149,4 @@ Class.forName("com.jcg.classloading.test.Test", true,  Test.class.getClassLoader
  - **静态加载：**在此技术中，类通过new运算符静态加载
  - **动态加载：**在此技术中，使用Class.forName()或loadClass()方法以编程方式加载类。两者之间的区别在于前者在加载后初始化对象，而后者只加载类但不初始化对象。
 
-<b><font color="FF0000">文章全部信息均为本人手写，禁止任何转载，本人QQ：794763733。</font></b>
+<b><font color="FF0000">文章内容均为本人手写；<br>禁止转载，请尊重原著；<br>本人QQ：794763733。</font></b>
